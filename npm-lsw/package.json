@@ -10,10 +10,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "gulp": "^4.0.2",
     "jquery": "^3.7.1",
     "jquery-ui": "^1.13.2"
   },
-  "devDependencies": {
-
-  }
+  "devDependencies": {}
 }
