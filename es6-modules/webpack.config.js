@@ -2,12 +2,12 @@ var path = require('path');
 
 module.exports = {
 	mode: 'production',
-	entry: './js/app.js',
-	output: {
+	entry: './js/app.js',		// entry : build를 할 대상 파일
+	output: {		// output : (build를 한 후) webpack으로 변환하고 난 후에 대한 정보를 정의하는 곳
 			path: path.resolve(__dirname, 'build'),
 			filename: 'main.bundle.js'
 	},
-	module: {
+	module: {		// module : entry에서 output으로 변환될 때 중간에 개입하는 것
 		rules: [{
 			test: /\.m?js$/,
 			exclude: /(node_modules|bower_components)/,
