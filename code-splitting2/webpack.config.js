@@ -16,6 +16,7 @@ module.exports = {
         // style-loader는 css 코드를 <head> 태그 안쪽에 inline으로 들어갈 수 있게 해주는 역할이다.
         // 따라서 css-loader가 먼저 실행이 된 후에 style-loader가 두번째로 실행되어야 한다.
         // build 시 우측부터 우선적으로 실행되므로 위 순서대로 작성해야 한다.
+        // 만일 sass를 사용하는 환경이라면 ['style-loader', 'css-loader', 'sass-loader'] 순서가 될 것이다.
       }
     ]
   },
