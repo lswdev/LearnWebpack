@@ -7,7 +7,7 @@ module.exports = {
 			path: path.resolve(__dirname, 'build'),
 			filename: 'main.bundle.js'
 	},
-	module: {		// module : entry에서 output으로 변환될 때 중간에 개입하는 것
+	module: {		// module : entry에서 output으로 변환될 때 중간에 개입하는 것 (loader)
 		rules: [{
 			test: /\.m?js$/,
 			exclude: /(node_modules|bower_components)/,
