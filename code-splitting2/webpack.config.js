@@ -19,7 +19,7 @@ module.exports = {
         // build 시 우측부터 우선적으로 실행되므로 위 순서대로 작성해야 한다.
         // 만일 sass를 사용하는 환경이라면 ['style-loader', 'css-loader', 'sass-loader'] 순서가 될 것이다.
 
-        use: [,
+        use: [
           { loader : MiniCssExtractPlugin.loader },
           "css-loader"
         ]
